@@ -1,0 +1,1 @@
+This folder contains SAS macros. All scripts here will be loaded into the SAS environment during the running of setup in the main script.

@@ -1,0 +1,1 @@
+This folder contains all sql scripts with a .sql extension.

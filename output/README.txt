@@ -1,0 +1,1 @@
+This folder is used to store analytical output such as Excel tables and graphics.

@@ -1,0 +1,1 @@
+Tis folder is used to store the output logs that SAS generates. This is used for the cross agency outcomes that have a lot of code to run.
