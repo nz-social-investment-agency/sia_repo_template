@@ -19,8 +19,13 @@ The purpose of this repo is to ensure that any IDI project that is started that 
 
 ## Dependencies
 * It is necessary to have an IDI Project if you wish to run the code. Visit the Stats NZ website for more information about this.
-* Code dependencies are captured via submodules in Github. You will find the submodules in the `lib` folder of this repository. Currently the submodules available are the `social_investment_analytical_layer`, `social_investment_data_foundation`, `SIAtoolbox` and `mha_data_definition`. To ensure you clone the submodules as well use `git clone --recursive https://nz-social-investment-agency/sia_repo_template.git`, Regular cloning or downloading of the zip file will result in all the `lib` subfolders being empty.
-* It is necessary to download and run the `social_investment_analytical_layer` scripts so that the SIAL tables exist for creating the service metrics (such as benefit costs, general medical subsidy costs and so on). We strongly recommend using the version in the submodule so that you always have access to the latest enhancements and bug fixes. Note when you create the SIAL tables, the script will attempt to access the following schemas in `IDI_Clean` (or the archives if you wish to use an older refresh):
+* Code dependencies are captured via submodules in Github. You will find the submodules in the `lib` folder of this repository. Currently the submodules available are
+   * `social_investment_analytical_layer`
+   * `social_investment_data_foundation`
+   * `SIAtoolbox`
+   * `mha_data_definition`
+* To ensure you clone the submodules as well use `git clone --recursive https://nz-social-investment-agency/sia_repo_template.git`, Regular cloning or downloading of the zip file will result in all the `lib` subfolders being empty.
+* The SIAL tables must exist for creating the service metrics in the data foundation (such as benefit costs, general medical subsidy costs and so on). We strongly recommend using the version in the submodule so that you always have access to the latest enhancements and bug fixes. Note when you create the SIAL tables, the script will attempt to access the following schemas in `IDI_Clean` (or the archives if you wish to use an older refresh):
     * acc_clean
     * cor_clean
     * cyf_clean
@@ -39,15 +44,25 @@ The purpose of this repo is to ensure that any IDI project that is started that 
 ## Folder descriptions
 <DELETE THE ONES YOU DONT NEED>
 **docs:** This folder contains relevant documentation.
+
 **examples:** This folder contains an example for training purposes.
+
 **include:** This folder contains generic formatting scripts - gradually being deprecated.
+
 **lib:** This folder is used to refer to reusable code that belongs to other repositories.
+
 **logs:** This folder is used to store the output logs that SAS generates. This is used for the cross agency outcomes that have a lot of code to run.
+
 **output:** This folder is used to store analytical output such as Excel tables and graphics.
+
 **rprogs:** This folder contains R scripts (both a main script and functions).
+
 **sasautos:** This folder contains SAS macros. All scripts here will be loaded into the SAS environment during the running of setup in the main script.
+
 **sasprogs:**This folder contains SAS programs. The main script that builds the dataset is located in here as well as well as other SAS scripts that are not macros.
+
 **unittests:** This folder contains unit tests for those who wish to debug the code.
+
 * Note `sasprogs` is the only folder with scripts you need to edit to create a data foundation, unless you want to make changes to any source code.
 
 ## Installation
