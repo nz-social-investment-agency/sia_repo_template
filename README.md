@@ -42,7 +42,8 @@ The purpose of this repo is to ensure that any IDI project that is started that 
 * You can use the Data Foundation to roll up only those SIAL tables that were created. All these macros are made available via a `sasautos` call to the relevant `lib` subfolder. If you attempt to run the data foundation to create a variable from a SIAL table that does not exist in your schema the variables wont be created. You won't get an error, the variable just won't exist.
 
 ## Folder descriptions
-<DELETE THE ONES YOU DONT NEED>
+\<DELETE THE ONES YOU DONT NEED\>
+
 **docs:** This folder contains relevant documentation.
 
 **examples:** This folder contains an example for training purposes.
@@ -59,7 +60,7 @@ The purpose of this repo is to ensure that any IDI project that is started that 
 
 **sasautos:** This folder contains SAS macros. All scripts here will be loaded into the SAS environment during the running of setup in the main script.
 
-**sasprogs:**This folder contains SAS programs. The main script that builds the dataset is located in here as well as well as other SAS scripts that are not macros.
+**sasprogs:** This folder contains SAS programs. The main script that builds the dataset is located in here as well as well as other SAS scripts that are not macros.
 
 **unittests:** This folder contains unit tests for those who wish to debug the code.
 
